@@ -1,0 +1,35 @@
+# Data Settings
+Data_CLASSES: ['0', '1']
+FoldFile: /data/henglin/bone_tumor/patch_label_T2-T12.csv
+
+# Training Settings
+Using_apex: False
+num_epoch: 20
+Using_pretrained_weights: False
+n_fold: 1
+valid_fold: 5
+infer_fold: 0
+GPUs: [0]
+num_workers: 4 #4
+batchsize: 10 #16
+window_width: 1400
+window_level: 600
+#window: 1500
+#level: -600
+rescale_size: 1
+# spacing: [0.7168, 0.7168, 1.25]
+print_freq: 1
+valid_freq: 1
+Cls:
+   resume:
+
+# Model Settings
+arch: resnet50
+resnet_shortcut: 'A'
+
+# Optimizer Settings
+optim: Adam
+lr: 0.0001
+weight_decay: 0.0001
+lr_decay_freq: 10
+lr_decay: 0.1

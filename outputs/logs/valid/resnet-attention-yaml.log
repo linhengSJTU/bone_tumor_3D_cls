@@ -1,0 +1,5 @@
+[20-04-08 10:11:36-INFO] Namespace(attention_ouput_path='InferSet_Regis', config='configs/resnet-attention.yaml', cuda=True, weights='checkpoints/ValidFold3_resnet50/ValidFold3_resnet50_best_auc.pth')
+[20-04-08 10:11:36-INFO] {'Data_CLASSES': ['0', '1'], 'FoldFile': '/data/henglin/bone_tumor/patch_label_T2-T12.csv', 'Using_apex': False, 'num_epoch': 15, 'Using_pretrained_weights': False, 'n_fold': 3, 'valid_fold': 3, 'infer_fold': 3, 'GPUs': [0], 'num_workers': 4, 'batchsize': 10, 'window_width': 1400, 'window_level': 600, 'rescale_size': 1, 'print_freq': 1, 'valid_freq': 1, 'Cls': {'resume': None}, 'arch': 'resnet50', 'resnet_shortcut': 'A', 'optim': 'Adam', 'lr': 0.0001, 'weight_decay': 0.0001, 'lr_decay_freq': 10, 'lr_decay': 0.1}
+[20-04-08 10:11:36-INFO] ['0', '1']
+[20-04-08 10:11:36-INFO] Using the network: resnet50
+[20-04-08 10:11:42-INFO] Finish loading resume network
